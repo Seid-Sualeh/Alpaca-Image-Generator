@@ -224,4 +224,10 @@ button:hover {
     display: block;
     gap: 10px;
   }
+  .main-container {
+  display: block;
+  gap: 20px;
+  height: auto;
+  /* flex-wrap: wrap;  Optional for mobile stacking */
+}
 }
