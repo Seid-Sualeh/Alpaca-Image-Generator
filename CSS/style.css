@@ -17,12 +17,13 @@ body {
 
 /* ========== CONTAINER ========== */
 .container {
-  background: #fff;
+  background: #EEEEEE;
   max-width: 1200px;
   width: 100%;
   border-radius: 20px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   padding: 30px;
+  
 }
 
 /* ========== HEADER ========== */
@@ -75,9 +76,15 @@ button {
   padding: 10px 18px;
   font-size: 1rem;
   border: none;
-  border-radius: 10px;
+  border-radius: 20px;
+  border: 2px solid #3b82f6;
   cursor: pointer;
   transition: 0.3s ease;
+ 
+}
+button:hover{
+    background-color: #23509C;
+    color: #fff;
 }
 
 #random-btn {

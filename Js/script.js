@@ -85,3 +85,31 @@ categoryButtons.forEach((btn) => {
 function changePart(part, option) {
   layers[part].src = `Images/${part}/${option}.png`;
 }
+
+
+
+
+
+
+
+
+
+// ===============================
+// 🔹 3. Randomize All Layers
+// ===============================
+function randomizeAlpaca() {
+  Object.keys(alpacaOptions).forEach((part) => {
+    const randomOption =
+      alpacaOptions[part][
+        Math.floor(Math.random() * alpacaOptions[part].length)
+      ];
+    changePart(part, randomOption);
+  });
+}
+
+
+
+
+document
+  .getElementById("random-btn")
+  .addEventListener("click", randomizeAlpaca);
