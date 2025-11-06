@@ -85,7 +85,3 @@ categoryButtons.forEach((btn) => {
 function changePart(part, option) {
   layers[part].src = `Images/${part}/${option}.png`;
 }
-
-/
-
-
