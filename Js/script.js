@@ -10,7 +10,7 @@ const alpacaOptions = {
     "darkblue30",
     "darkblue50",
     "darkblue70",
-    "gree50",
+    "green50",
     "green60",
     "green70",
     "grey40",
