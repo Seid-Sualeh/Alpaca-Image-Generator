@@ -1,0 +1,72 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alpaca Image Generator</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- ===== Header ===== -->
+      <header>
+        <h1>🦙 Alpaca Image Generator</h1>
+        <p>Create your own funny alpaca avatar!</p>
+      </header>
+
+      <!-- ===== Preview Section ===== -->
+      <section class="preview-area">
+        <div class="alpaca-preview">
+          <!-- each image layer will be placed on top of each other -->
+          <img id="background" src="./Images/backgrounds/blue50.png" alt="background" />
+          <img id="neck" src="./Images/neck/bend-backward.png" alt="neck" />
+          <img id="ears" src="./Images/ears/default.png" alt="ears" />
+          <img id="eyes" src="./Images/eyes/default.png" alt="eyes" />
+          <img id="hair" src="Images/hair/default.png" alt="hair" />
+          <img id="mouth" src="./Images/mouth/default.png" alt="mouth" />
+          <img id="leg" src="./Images/leg/default.png" alt="leg" />
+          <img id="nose" src="./Images/nose/nose.png" alt="nose" />
+          <img id="accessories" src="./Images/accessories/flower.png" alt="accessories" />
+        </div>
+
+        <div class="buttons">
+          <button id="random-btn">🎲 Randomize</button>
+           <a
+              href="./alpaca-generator-assets.zip"
+              
+              download="Images"
+            >
+              <button id="download-btn" download>⬇️ Download</button>
+            </a>
+          <!-- <button id="download-btn" download>⬇️ Download</button> -->
+        </div>
+      </section>
+
+     <!-- ===== Control Panel ===== -->
+<section class="controls">
+  <h2>Customize Your Alpaca</h2>
+
+  <!-- Category Buttons -->
+  <div class="categories">
+    <button data-category="backgrounds">Background</button>
+    <button data-category="neck">Neck</button>
+    <button data-category="ears">Ears</button>
+    <button data-category="eyes">Eyes</button>
+    <button data-category="hair">Hair</button>
+    <button data-category="mouth">Mouth</button>
+    <button data-category="leg">Leg</button>
+    <button data-category="nose">Nose</button>
+    <button data-category="accessories">Accessories</button>
+  </div>
+
+  <!-- Option Groups (hidden until clicked) -->
+  <div id="options-container"></div>
+</section>
+
+    </div>
+
+    <script src="Js/script.js"></script>
+  </body>
+</html>
