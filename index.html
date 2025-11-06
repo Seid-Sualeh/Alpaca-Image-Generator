@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,71 +11,67 @@
       <!-- ===== Header ===== -->
       <header>
         <h1>Alpaca Image Generator</h1>
-        
       </header>
 
       <!-- main -->
-  <main>
+      <main class="main-container">
+        <!-- ===== Preview Section ===== -->
+        <section class="preview-area">
+          <div class="alpaca-preview">
+            <!-- each image layer will be placed on top of each other -->
+            <img
+              id="background"
+              src="./Images/backgrounds/blue50.png"
+              alt="background"
+            />
+            <img id="neck" src="./Images/neck/bend-backward.png" alt="neck" />
+            <img id="ears" src="./Images/ears/default.png" alt="ears" />
+            <img id="eyes" src="./Images/eyes/default.png" alt="eyes" />
+            <img id="hair" src="Images/hair/default.png" alt="hair" />
+            <img id="mouth" src="./Images/mouth/default.png" alt="mouth" />
+            <img id="leg" src="./Images/leg/default.png" alt="leg" />
+            <img id="nose" src="./Images/nose/nose.png" alt="nose" />
+            <img
+              id="accessories"
+              src="./Images/accessories/flower.png"
+              alt="accessories"
+            />
+          </div>
 
-<section class="">
-      <!-- ===== Preview Section ===== -->
-      <section class="preview-area">
-        <div class="alpaca-preview">
-          <!-- each image layer will be placed on top of each other -->
-          <img id="background" src="./Images/backgrounds/blue50.png" alt="background" />
-          <img id="neck" src="./Images/neck/bend-backward.png" alt="neck" />
-          <img id="ears" src="./Images/ears/default.png" alt="ears" />
-          <img id="eyes" src="./Images/eyes/default.png" alt="eyes" />
-          <img id="hair" src="Images/hair/default.png" alt="hair" />
-          <img id="mouth" src="./Images/mouth/default.png" alt="mouth" />
-          <img id="leg" src="./Images/leg/default.png" alt="leg" />
-          <img id="nose" src="./Images/nose/nose.png" alt="nose" />
-          <img id="accessories" src="./Images/accessories/flower.png" alt="accessories" />
-        </div>
+          <div class="buttons">
+            <button id="random-btn">🎲 Randomize</button>
 
-        <div class="buttons">
-          <button id="random-btn">🎲 Randomize</button>
-          
-          <a
-              href="./alpaca-generator-assets.zip"
-              
-              download="Images"
-            >
+            <!-- <a href="./alpaca-generator-assets.zip" download="Images">
               <button id="download-btn" download>⬇️ Download</button>
-            </a>
-        </div>
-      </section>
+            </a> -->
+            <button id="download-btn">⬇️ Download</button>
+          </div>
+        </section>
 
-     <!-- ===== Control Panel ===== -->
-<section class="controls">
-  <h2>Accessorize Alpaca's</h2>
+        <!-- ===== Control Panel ===== -->
+        <section class="controls">
+          <h2 >Accessorize Alpaca's</h2>
 
-  <!-- Category Buttons -->
-  <div class="categories">
-    <button data-category="backgrounds">Background</button>
-    <button data-category="neck">Neck</button>
-    <button data-category="ears">Ears</button>
-    <button data-category="eyes">Eyes</button>
-    <button data-category="hair">Hair</button>
-    <button data-category="mouth">Mouth</button>
-    <button data-category="leg">Leg</button>
-    <button data-category="nose">Nose</button>
-    <button data-category="accessories">Accessories</button>
-  </div>
+          <!-- Category Buttons -->
+          <div class="categories">
+            <button data-category="backgrounds">Background</button>
+            <button data-category="neck">Neck</button>
+            <button data-category="ears">Ears</button>
+            <button data-category="eyes">Eyes</button>
+            <button data-category="hair">Hair</button>
+            <button data-category="mouth">Mouth</button>
+            <button data-category="leg">Leg</button>
+            <button data-category="nose">Nose</button>
+            <button data-category="accessories">Accessories</button>
+          </div>
 
-  <!-- Option Groups (hidden until clicked) -->
-  <div id="options-container"></div>
-</section>
-
-</section>
-
-
-
-
-</main>
-
-
+          <!-- Option Groups (hidden until clicked) -->
+           <h2 >Styles</h2>
+          <div id="options-container"></div>
+        </section>
+      </main>
     </div>
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
 
     <script src="Js/script.js"></script>
   </body>

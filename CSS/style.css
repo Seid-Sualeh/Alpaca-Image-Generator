@@ -1,10 +1,16 @@
-  /* ========== RESET & BASE ========== */
+/* ============================================================
+   GLOBAL RESET & BASE STYLES
+   - Remove default browser spacing
+   - Apply consistent box-sizing and base font
+   ============================================================ */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
+/* 🌍 Body Layout & Background */
 body {
   background: #f2f4f8;
   color: #333;
@@ -15,18 +21,24 @@ body {
   padding: 20px;
 }
 
-/* ========== CONTAINER ========== */
+/* ============================================================
+    MAIN CONTAINER
+   - Holds all page content
+   - Styled with shadow, padding, and rounded corners
+   ============================================================ */
 .container {
-  background: #EEEEEE;
-  max-width: 1200px;
+  background: #eeeeee;
+  max-width: 1400px;
   width: 100%;
-  border-radius: 20px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
   padding: 30px;
-  
 }
 
-/* ========== HEADER ========== */
+/* ============================================================
+    HEADER SECTION
+   - Displays main title and subtitle
+   ============================================================ */
 header {
   text-align: center;
   margin-bottom: 30px;
@@ -35,15 +47,24 @@ header {
 header h1 {
   font-size: 2.2rem;
   color: #3b82f6;
+  margin-bottom: 10px;
 }
 
-header p {
-  color: #555;
-  font-size: 1.1rem;
-  margin-top: 5px;
+/* ============================================================
+    MAIN LAYOUT
+  
+   ============================================================ */
+.main-container {
+  display: flex;
+  gap: 40px;
+  height: auto;
+  /* flex-wrap: wrap;  Optional for mobile stacking */
 }
 
-/* ========== PREVIEW AREA ========== */
+/* ============================================================
+  
+    Displays generated alpaca image and control buttons
+   ============================================================ */
 .preview-area {
   display: flex;
   flex-direction: column;
@@ -51,12 +72,14 @@ header p {
   gap: 20px;
 }
 
+/*  Alpaca Image Layer Container */
 .alpaca-preview {
   position: relative;
   width: 250px;
   height: 250px;
 }
 
+/*  Layered Alpaca Parts (each PNG image stacked) */
 .alpaca-preview img {
   position: absolute;
   top: 0;
@@ -66,56 +89,67 @@ header p {
   object-fit: contain;
 }
 
-/* ========== BUTTONS ========== */
+/* ============================================================
+  
+    Common button styling and hover effects
+   ============================================================ */
 .buttons {
   display: flex;
   gap: 10px;
 }
 
+/*  Base button styling */
 button {
   padding: 10px 18px;
   font-size: 1rem;
   border: none;
   border-radius: 20px;
-  border: 2px solid #3b82f6;
+  border: 2px solid #d0dcff;
   cursor: pointer;
   transition: 0.3s ease;
- 
-}
-button:hover{
-    background-color: #23509C;
-    color: #fff;
 }
 
+/* 🖱️ Hover effect for all buttons */
+button:hover {
+  background-color: #23509c;
+  color: #fff;
+  border: none;
+}
+
+/* 🎲 Random Button */
 #random-btn {
   background: #3b82f6;
   color: #fff;
 }
-
 #random-btn:hover {
-  background: #2563eb;
+  background-color: #23509c;
 }
 
+/* ⬇️ Download Button */
 #download-btn {
   background: #10b981;
   color: #fff;
+  border: none;
 }
-
 #download-btn:hover {
-  background: #059669;
+  background: #23509c;
 }
 
-/* ========== CONTROLS ========== */
+/* ============================================================
+    CONTROL PANEL
+  
+   ============================================================ */
 .controls {
   margin-top: 40px;
 }
 
+/* Control section heading */
 .controls h2 {
-  text-align: center;
   color: #3b82f6;
   margin-bottom: 20px;
 }
 
+/* Individual control groups (category + options) */
 .control-group {
   margin-bottom: 25px;
 }
@@ -125,33 +159,69 @@ button:hover{
   margin-bottom: 10px;
 }
 
-.options {
+/* ============================================================
+   🧭 CATEGORIES & OPTIONS STYLING
+   ============================================================ */
+.categories,
+#options-container {
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+/* Common button styling inside category & options area */
+.categories button,
+#options-container button {
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+/*  Layout for Category Buttons */
+.categories {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
 
-.options button {
-  background: #e5e7eb;
-  color: #333;
+/*  Layout for Option Buttons */
+#options-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-.options button.active {
-  background: #3b82f6;
+/*  Active button  */
+.categories button.active,
+#options-container button.active {
+  background: #23509c;
   color: white;
+  box-shadow: 0 2px 5px rgba(35, 80, 156, 0.4);
 }
-/* ========== RESPONSIVE ========== */
+
+/* ============================================================
+   📱 RESPONSIVE DESIGN
+   - Adjust layout for tablets and mobile devices
+   ============================================================ */
 @media (max-width: 768px) {
   .container {
     padding: 20px;
   }
 
+  /* Smaller preview image */
   .alpaca-preview {
     width: 200px;
     height: 200px;
   }
 
+  /* Smaller title */
   header h1 {
     font-size: 1.8rem;
+  }
+
+  /* Stack buttons vertically on small screens */
+  .buttons {
+    display: block;
+    gap: 10px;
   }
 }
