@@ -14,10 +14,13 @@ A fun and interactive web app that allows users to **customize their own alpaca 
 ---
 
 ## 📸 Preview  
-*(Add a screenshot or GIF of your project here)*  
-Example:  
+ # Alpaca Generator Preview on Large screen  
+
 ![Alpaca Generator Preview on Large screen](./Images/computer%20size.png)
+# Alpaca Generator Preview on Small screen 
 ![Alpaca Generator Preview on Small screen](./Images/mobile%20size.png)
+
+
 ---
 
 
@@ -129,7 +132,7 @@ Alpaca-Image-Generator/
 ```
 
 
-
+---
 
 ## ⚙️ Configuration Example
 ```bash
@@ -137,39 +140,40 @@ function changePart(part, option) {
   layers[part].src = `Images/${part}/${option}.png`;
 }
 ```
+---
 ## 🌐 Browser Compatibility  
-# | Browser           | Version | Support    |
-# | ----------------- | ------- | ---------- |
-# | Chrome            | 60+     | ✅ Full     |
-# | Firefox           | 55+     | ✅ Full     |
-# | Safari            | 12+     | ✅ Full     |
-# | Edge              | 79+     | ✅ Full     |
-# | Internet Explorer | 11      | ⚠️ Limited |
+ | Browser           | Version | Support    |
+| ----------------- | ------- | ---------- |
+ | Chrome            | 60+     | ✅ Full     |
+ | Firefox           | 55+     | ✅ Full     |
+ | Safari            | 12+     | ✅ Full     |
+ | Edge              | 79+     | ✅ Full     |
+ | Internet Explorer | 11      | ⚠️ Limited |
 
 
-
+---
 ## 📱 Performance
 
-# ⚡ Load Time: < 3 seconds
+ ⚡ Load Time: < 3 seconds
 
-# 🧠 Optimized memory management
+ 🧠 Optimized memory management
 
-# 🖼️ Lazy loading for images
+ 🖼️ Lazy loading for images
 
-# 📸 High-resolution PNG export (2× scale)
+ 📸 High-resolution PNG export (2× scale)
 
 
-
+---
 
 ## 🏆 Acknowledgments
 
-# 🧰 html2canvas – For image exporting
+ 🧰 html2canvas – For image exporting
 
-# 🖋️ Poppins Font – For modern typography
+ 🖋️ Poppins Font – For modern typography
 
-# 💡 Safaricom Talent Cloud – For inspiration & learning
+ 💡 Safaricom Talent Cloud – For inspiration & learning
 
-
+---
 
 <p align="center">
   Made with ❤️ by <strong>Seid Sualeh Mohammed</strong><br>
